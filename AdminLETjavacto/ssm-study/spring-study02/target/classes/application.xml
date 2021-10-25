@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="user" class="cn.itnanls.User">
+      <!--一.构造注入 一定要有对应的构造方法-->
+      <!-- 1.推荐使用，根据名字注入 -->
+     <!-- <constructor-arg name="name" value="lucy"/>
+      <constructor-arg name="age" value="21"></constructor-arg>-->
+
+      <!-- 2.按照构造参数的类型注入，了解 -->
+      <!--<constructor-arg type="java.lang.Integer" value="21"></constructor-arg>
+      <constructor-arg type="java.lang.String" value="JERRY"></constructor-arg>-->
+
+      <!--3.根据构造参数序号注入 -->
+      <!--<constructor-arg index="0" value="goldilocks"/>
+      <constructor-arg index="1" value="11"/>-->
+
+      <!--4.直接注入也是按顺序注入，了解 -->
+      <!--<constructor-arg value="goldilocks"/>
+      <constructor-arg value="21"/>-->
+
+      <!--二.setter注入 一定要有一个空参注入-->
+      <property name="name" value="tom"/>
+      <property name="age" value="21"/>
+   </bean>
+
+</beans>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: dev.tuxjsql:hikaricp-cp:2.1">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/apache-maven-3.6.3/RepositoryIdea/dev/tuxjsql/hikaricp-cp/2.1/hikaricp-cp-2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$APPLICATION_HOME_DIR$/apache-maven-3.6.3/RepositoryIdea/dev/tuxjsql/hikaricp-cp/2.1/hikaricp-cp-2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$APPLICATION_HOME_DIR$/apache-maven-3.6.3/RepositoryIdea/dev/tuxjsql/hikaricp-cp/2.1/hikaricp-cp-2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

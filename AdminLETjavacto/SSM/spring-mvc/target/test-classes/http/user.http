@@ -1,0 +1,22 @@
+# curl -i http://httpbin.org/ip
+GET http://httpbin.org/ip
+
+###
+
+GET http://localhost:7777/user6/showUser4
+#Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
+
+#id=1&username=zs&password=456&birthday=2019_04_15 10,10,1
+
+{
+  "id": 1,
+  "username": "zs",
+  "password": "456",
+  "birthday":"2019年08月22日"
+}
+
+###
+
+
+

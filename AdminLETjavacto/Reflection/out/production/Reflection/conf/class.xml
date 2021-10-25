@@ -1,0 +1,17 @@
+<class name="开发六部">
+    <student>
+        <name>张三</name>
+        <age>13</age>
+        <gander>男</gander>
+    </student>
+    <student>
+        <name>李四</name>
+        <age>14</age>
+        <gander>女</gander>
+    </student>
+    <student>
+        <name>王五</name>
+        <age>15</age>
+        <gander>男</gander>
+    </student>
+</class>

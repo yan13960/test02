@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Reflection:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="341a258d-ff2a-46dc-b497-d5dd36ab217c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="FxmlFile" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\java\apache-maven-3.6.3\RepositoryIdea" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1xOYhBkD3p2cz6TwU7CAAbNgZAo" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\IdeaProjects\AdminLETjavacto\Reflection\BookManager\lib" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.itnanls" />
+      <recent name="com.xinzhi" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\IdeaProjects\AdminLETjavacto\Reflection\BookManager\src\cn\itnanls" />
+      <recent name="D:\java\IdeaProjects\AdminLETjavacto\Reflection\BookManager\src" />
+      <recent name="D:\java\IdeaProjects\AdminLETjavacto\Reflection\resourses\lib" />
+      <recent name="D:\java\IdeaProjects\AdminLETjavacto\Reflection\resourses" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BootStrap">
+    <configuration name="BootStrap 2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itnanls.BootStrap" />
+      <module name="BookManager" />
+      <option name="ENABLE_SWING_INSPECTOR" value="true" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itnanls.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootStrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itnanls.BootStrap" />
+      <module name="Reflection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itnanls.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Animal2.optAnnotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Reflection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xinzhi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xinzhi" />
+      <option name="MAIN_CLASS_NAME" value="com.xinzhi.Animal2" />
+      <option name="METHOD_NAME" value="optAnnotation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IBookServiceImpl.borrow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Reflection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itnanls.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.itnanls.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="cn.itnanls.service.impl.IBookServiceImpl" />
+      <option name="METHOD_NAME" value="borrow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reflection.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Reflection_jar/Reflection.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BootStrap" />
+        <item itemvalue="Application.BootStrap 2" />
+        <item itemvalue="JAR Application.Reflection.jar" />
+        <item itemvalue="JUnit.IBookServiceImpl.borrow" />
+        <item itemvalue="JUnit.Animal2.optAnnotation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="341a258d-ff2a-46dc-b497-d5dd36ab217c" name="Default Changelist" comment="" />
+      <created>1630227718861</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630227718861</updated>
+      <workItem from="1630227721209" duration="3434000" />
+      <workItem from="1630314346605" duration="4839000" />
+      <workItem from="1630498694459" duration="3174000" />
+      <workItem from="1630667715688" duration="3174000" />
+      <workItem from="1630677474761" duration="384000" />
+      <workItem from="1630678400547" duration="2174000" />
+      <workItem from="1630760829004" duration="6463000" />
+      <workItem from="1630846632151" duration="6260000" />
+      <workItem from="1630903696148" duration="11392000" />
+      <workItem from="1631075070651" duration="1676000" />
+      <workItem from="1631192702846" duration="862000" />
+      <workItem from="1631381788307" duration="809000" />
+      <workItem from="1631431435225" duration="26000" />
+      <workItem from="1631940581219" duration="174000" />
+      <workItem from="1631949184518" duration="15000" />
+      <workItem from="1632305207770" duration="634000" />
+      <workItem from="1632838079443" duration="799000" />
+      <workItem from="1633609462069" duration="6902000" />
+      <workItem from="1633697008223" duration="3844000" />
+      <workItem from="1633707761215" duration="102000" />
+      <workItem from="1633707876931" duration="8350000" />
+      <workItem from="1633763515501" duration="5409000" />
+      <workItem from="1633936849581" duration="96000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1149" y="218" key="#BootStrap_" timestamp="1633766572096">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1126" y="215" key="#BootStrap_(1)" timestamp="1633766547584">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1126" y="215" key="#BootStrap_(1)/0.0.1920.1040@0.0.1920.1040" timestamp="1633766547584" />
+    <state x="1149" y="218" key="#BootStrap_/0.0.1920.1040@0.0.1920.1040" timestamp="1633766572096" />
+    <state x="1028" y="179" key="#Project_Structure" timestamp="1633768509805">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1028" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1633768509805" />
+    <state x="1219" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1633768718956">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1219" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1633768718956" />
+    <state x="1184" y="405" width="441" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1630316057757">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1184" y="405" width="441" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1630316057757" />
+    <state x="1210" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1633767430240">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1210" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1633767430240" />
+    <state x="1216" y="275" key="FileChooserDialogImpl" timestamp="1631431453344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1216" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1631431453344" />
+    <state width="941" height="280" key="GridCell.Tab.0.bottom" timestamp="1633768977333">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="941" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633768977333" />
+    <state width="941" height="280" key="GridCell.Tab.0.center" timestamp="1633768977333">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="941" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633768977333" />
+    <state width="941" height="280" key="GridCell.Tab.0.left" timestamp="1633768977333">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="941" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633768977333" />
+    <state width="941" height="280" key="GridCell.Tab.0.right" timestamp="1633768977333">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="941" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633768977333" />
+    <state width="1006" height="344" key="GridCell.Tab.1.bottom" timestamp="1632839816631">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1006" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1632839816631" />
+    <state width="1006" height="344" key="GridCell.Tab.1.center" timestamp="1632839816631">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1006" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1632839816631" />
+    <state width="1006" height="344" key="GridCell.Tab.1.left" timestamp="1632839816631">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1006" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1632839816631" />
+    <state width="1006" height="344" key="GridCell.Tab.1.right" timestamp="1632839816631">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1006" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1632839816631" />
+    <state x="756" y="190" key="SettingsEditor" timestamp="1633768473812">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="190" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1633768473812" />
+    <state x="984" y="352" key="com.intellij.ide.util.TipDialog" timestamp="1633707767371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="984" y="352" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1633707767371" />
+    <state x="669" y="143" key="new project wizard" timestamp="1633766123630">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="143" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1633766123630" />
+  </component>
+</project>

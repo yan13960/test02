@@ -1,0 +1,26 @@
+DELETE http://localhost:7777/user8/3
+
+###
+PUT http://localhost:7777/user8/3
+Content-Type: application/json
+
+{
+  "id": 3,
+  "username": "lisi",
+  "password":"123456789"
+}
+
+###
+POST http://localhost:7777/user8/3
+Content-Type: application/x-www-form-urlencode;charset=utf-8
+
+id=2&username=lisi&password=123456
+###
+
+
+###
+GET http://localhost:7777/user8/3
+
+
+
+###

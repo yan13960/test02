@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itnanls.dao.UserDao">
+    <!--
+          ${} 取值以后再去编译sql语句 select * from `user` where name = "张三"
+          #{} 预编译sql语句再取值 select * from `user` where name = ?
+           #{}能够很大程度上防止sql注入   '%${name}%'正确  '%#{name}%'错误
+           concat("%",#{name},"%")
+           parameterType只有一个参数可以不用写 mabatis会自动解析
+       -->
+    <select id="selectUserById" parameterType="int" resultType="cn.itnanls.entity.User">
+        select * from user where id = #{id}
+    </select>
+
+    <insert id="saveUser" parameterType="cn.itnanls.entity.User">
+       insert into user (id,username,password) values (#{id},#{username},#{password})
+    </insert>
+
+    <update id="updateUser" parameterType="cn.itnanls.entity.User">
+    update user set username=#{username},password=#{password} where id = #{id}
+    </update>
+
+    <!--动态sql-->
+    <update id="updateUser2" parameterType="cn.itnanls.entity.User">
+    update user set
+    <trim suffixOverrides=",">
+    <if test="username!=null and username != ''">
+        username=#{username},
+    </if>
+    <if test="password !=null and password!= ''">
+        password=#{password},
+    </if>
+    </trim>
+        where id = #{id}
+    </update>
+
+    <update id="updateUser3" parameterType="cn.itnanls.entity.User">
+        update user
+       <set>
+            <if test="username!=null and username != ''">
+                username=#{username},
+            </if>
+            <if test="password !=null and password!= ''">
+                password=#{password},
+            </if>
+       </set>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUserById" parameterType="java.lang.Integer">
+      delete from user where id = #{id}
+    </delete>
+
+    <sql id="selectAllUser">
+        select id, username,password from user
+    </sql>
+
+    <select id="findAllUsers"  resultType="cn.itnanls.entity.User">
+        <include refid="selectAllUser"></include>
+    </select>
+
+
+   <!--多条件查询-->
+    <select id="queryUsers"  resultType="cn.itnanls.entity.User">
+    select id, username,password from user
+    where 1=1
+    <if test="id != null">
+        and id =#{id}
+    </if>
+    <if test=" username!=null and username != ''">
+        and username = #{username}
+    </if>
+    <if test="password !=null and password!= ''">
+        and password= #{password}
+    </if>
+   </select>
+
+    <!--  <select id="queryUsers"  resultType="cn.itnanls.entity.User">
+         select id, username,password from user
+         <where>
+         <if test="id != null">
+             and id =#{id}
+         </if>
+         <if test=" username!=null and username != ''">
+             and username = #{username}
+         </if>
+         <if test="password !=null and password!= ''">
+             and password= #{password}
+         </if>
+         </where>
+     </select>-->
+
+    <!--像if else-->
+    <select id="queryUsers2"  resultType="cn.itnanls.entity.User">
+        select id, username,password from user
+        where 1=1
+        <choose>
+            <when test="username!= null and username != ''">
+                and username =#{username}
+            </when>
+            <when test="password !=null and password!= ''">
+                and password  =#{password}
+            </when>
+        </choose>
+    </select>
+<!--prefix代表的是语句的前缀，而prefixOverrides代表的是你需要去掉
+的那种字符串，suffix表示语句的后缀，suffixOverrides代表去掉的后缀字符串。-->
+    <select id="queryUsers3"  resultType="cn.itnanls.entity.User">
+        select id, username,password from user
+      <trim prefix="where" prefixOverrides="and">
+          <if test="id != null">
+              and id =#{id}
+          </if>
+          <if test=" username!=null and username != ''">
+              and username = #{username}
+          </if>
+          <if test="password !=null and password!= ''">
+              and password= #{password}
+          </if>
+      </trim>
+
+    </select>
+    <!--
+           foreach元素是一个循环语句，它的作用是遍历集合，可以支持数组、List、Set接口。
+           collection 集合的属性
+           item 每次循环遍历出来的对象，使用一个变量接收
+           open 开始 and id in(
+           close 结束 )
+           separator 循环出来的结果是什么拼接符号   idlist =  1,2,3,4,5
+       -->
+    <select id="queryUsersByIds"  resultType="cn.itnanls.entity.User">
+        <include refid="selectAllUser"></include>
+         where id in
+        <foreach collection="list" open="(" close=")" separator="," item="id">
+            #{id}
+        </foreach>
+    </select>
+
+    <select id="findUsersByName"  resultType="cn.itnanls.entity.User" parameterType="String">
+        select * from user where username=#{username }
+    </select>
+
+    <select id="findUsersByName2"  resultType="cn.itnanls.entity.User">
+        /*select * from user where username like '%${name}%'*/
+        select * from `user` where username like concat("%",#{name},"%");
+    </select>
+
+    <!-- 在实际业务当中，可能这个表的插入和其他表挂钩，比如说插入了用户表一条数据，另外一个表需要记录用户的ID -->
+    <!-- 新增的时候 返回主键ID -->
+    <!--<insert id="add2" parameterType="cn.itnanls.entity.User">
+        <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
+            select max(id) from user
+        </selectKey>
+        insert into user(username) values (#{username})
+    </insert>-->
+</mapper>

@@ -1,0 +1,5 @@
+<mybatis>
+    <dataSource>hikari</dataSource>
+    <mapper>mapper/UserMapper.xml</mapper>
+    <mapper>mapper/StudentMapper.xml</mapper>
+</mybatis>

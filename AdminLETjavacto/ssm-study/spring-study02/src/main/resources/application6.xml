@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd"
+>
+   <!--自动扫包-->
+   <context:component-scan base-package="cn.itnanls"/>
+
+   <bean id="dataSource2" class="com.alibaba.druid.pool.DruidDataSource">
+      <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="url" value="jdbc:mysql://127.0.0.1:3306/ssm2?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=Asia/Shanghai&amp;allowPublicKeyRetrieval=true&amp;useSSL=false"/>
+      <property name="username" value="root"/>
+      <property name="password" value="1234"/>
+   </bean>
+
+  <!-- <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+      <property name="dataSource" ref="dataSource2"/>
+   </bean>-->
+
+  <!--自动依赖-->
+   <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" autowire="byName">
+
+   </bean>
+
+  <!-- <bean id="address3" class="cn.itnanls.Address">
+      <property name="addressInfo" value="北京八大胡同"/>
+   </bean>
+
+   <bean id="address2" class="cn.itnanls.Address">
+      <property name="addressInfo" value="北京八大胡同2"/>
+   </bean>
+  &lt;!&ndash;scope="prototype"多例模式  scope="singleton"单例模式   默认为单例
+    autowire 自动装配byName address   byType cn.itnanls.Address&ndash;&gt;
+  &lt;!&ndash; <bean id="user3" class="cn.itnanls.User3" autowire="byName">&ndash;&gt;
+   <bean id="user5" class="cn.itnanls.User5" >
+      &lt;!&ndash;注入别的类 ref&ndash;&gt;
+      <property name="name" value="lucy"/>
+
+      &lt;!&ndash;注入数组类型&ndash;&gt;
+      <property name="hobbies">
+         <array value-type="java.lang.String">
+            <value>篮球</value>
+            <value>足球</value>
+         </array>
+      </property>
+      &lt;!&ndash;集合注入&ndash;&gt;
+      <property name="duties">
+         <list value-type="java.lang.String">
+            <value>厂长</value>
+            <value>党委副书记</value>
+         </list>
+      </property>
+       &lt;!&ndash;map注入&ndash;&gt;
+      <property name="familyTies">
+         <map>
+            <entry key="父亲" value="王健林"/>
+            <entry key="母亲" value="董明珠"/>
+         </map>
+      </property>
+      &lt;!&ndash;set注入&ndash;&gt;
+      <property name="carts">
+         <set>
+            <value>韭菜</value>
+            <value>鸡蛋</value>
+         </set>
+      </property>
+      &lt;!&ndash;Properties注入&ndash;&gt;
+      <property name="workExperience">
+         <props>
+            <prop key="杭州阿里巴巴工作过">工作两年</prop>
+            <prop key="百度">工作三年</prop>
+         </props>
+      </property>
+      &lt;!&ndash;null注入&ndash;&gt;
+      <property name="daughter">
+         <null></null>
+      </property>
+   </bean>-->
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <!-- 配置单个的别名 -->
+        <!--<typeAlias type="com.cold.entity.User" alias="zls"></typeAlias>-->
+        <!--
+            让mybatis批量帮助我们取别名
+            取别名的规则是，去两个名字，一个是大写的类名，一个是小写的类名
+            比如com.cold.entity.User > User user
+        -->
+        <package name="cn.itnanls.entity"/>
+    </typeAliases>
+
+
+</configuration>

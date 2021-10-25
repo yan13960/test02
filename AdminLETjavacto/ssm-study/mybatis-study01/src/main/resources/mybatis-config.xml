@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="db.properties"></properties>
+<!--是否开启自动驼峰命名规则（camel case）映射，
+即从经典数据库列名 A_COLUMN 到经典Java 属性名 aColumn的类似映射。
+-->
+    <settings>
+       <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="logImpl" value="LOG4J"/>
+
+        <!--开启二级缓存-->
+        <setting name="cacheEnabled" value="true"/>
+
+        <!--延迟加载总开关-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--侵入式延迟加载开关-->
+        <!--3.4.1版本之前默认是true，之后默认是false-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <!-- 必须匹配 "(properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,objectWrapperFactory?,reflectorFactory?,
+    plugins?,environments?,databaseIdProvider?,mappers?)-->
+    <typeAliases>
+        <!-- 配置单个的别名 -->
+        <!--<typeAlias type="com.cold.entity.User" alias="zls"></typeAlias>-->
+        <!--<typeAliases>
+        <typeAlias type="cn.itnanls.entity.User" alias="user"></typeAlias>
+         </typeAliases>
+            让mybatis批量帮助我们取别名
+            取别名的规则是，去两个名字，一个是大写的类名，一个是小写的类名
+            比如com.cold.entity.User > User user
+        -->
+        <package name="cn.itnanls.entity"/>
+    </typeAliases>
+
+   <!-- 1. UNPOOLED：不使用连接池的数据源
+        2. POOLED：使用连接池的数据源
+        3. JNDI：使用JNDI实现的数据源-->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="cn.itnanls.datasource.HikariDataSource">
+                <property name="driverClassName" value="${driver}"/>
+                <property name="jdbcUrl" value="${url}" />
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+                <property name="idleTimeout" value="10000"/>
+                <!--最大连接数-->
+            </dataSource>
+        </environment>
+
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/ssm2?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai" />
+                <property name="username" value="root"/>
+                <property name="password" value="1234"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"></mapper>
+        <mapper class="cn.itnanls.dao.StudentDao"></mapper>
+        <mapper resource="mapper/UserMapper2.xml"></mapper>
+        <mapper resource="mapper/DeptMapper.xml"></mapper>
+        <mapper resource="mapper/EmployeeMapper.xml"></mapper>
+    </mappers>
+
+</configuration>

@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Reflection:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Reflection_jar</output-path>
+    <root id="archive" name="Reflection.jar">
+      <element id="module-output" name="Reflection" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/resourses/lib/junit-4.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/resourses/lib/dom4j-1.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/resourses/lib/mysql-connector-java-5.1.10-bin.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

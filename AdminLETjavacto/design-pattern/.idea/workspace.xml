@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="953fe580-a471-4d9b-b694-ae37513e336b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\java\apache-maven-3.6.3\RepositoryIdea" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1xqbcllmRMVunNZR31xhOTawGD8" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\IdeaProjects\AdminLETjavacto\design-pattern\mybatis\src\main\resources\mapper" />
+      <recent name="D:\java\IdeaProjects\AdminLETjavacto\design-pattern\proxy-pattern\src" />
+      <recent name="D:\java\IdeaProjects\AdminLETjavacto\design-pattern\proxy-pattern\src\main\java\cn\dtdlClass" />
+      <recent name="D:\java\IdeaProjects\AdminLETjavacto\design-pattern\proxy-pattern\src\main\java\cn\dtdl" />
+      <recent name="D:\java\IdeaProjects\AdminLETjavacto\design-pattern\factory-pattern\src\main\java\cn\itnanls\gcff" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.dtdlClass" />
+      <recent name="cn.hanoi" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.itnanls.core" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Client2">
+    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itnanls.jdgc.Client" />
+      <module name="factory-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itnanls.jdgc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itnanls.Client" />
+      <module name="proxy-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itnanls.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.jdkdtdl.Client" />
+      <module name="proxy-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.jdkdtdl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itnanls.gcff.Client" />
+      <module name="factory-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itnanls.gcff.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dtdlClass.Client2" />
+      <module name="proxy-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.dtdlClass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dtdlClass.Client2" />
+      <module name="proxy-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.dtdlClass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client2" />
+        <item itemvalue="Application.Client (4)" />
+        <item itemvalue="Application.Client (3)" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Client (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="953fe580-a471-4d9b-b694-ae37513e336b" name="Default Changelist" comment="" />
+      <created>1631085646860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631085646860</updated>
+      <workItem from="1631085649554" duration="7168000" />
+      <workItem from="1631162349175" duration="793000" />
+      <workItem from="1631186749869" duration="2925000" />
+      <workItem from="1631192024824" duration="115000" />
+      <workItem from="1631192150572" duration="8811000" />
+      <workItem from="1631201419608" duration="277000" />
+      <workItem from="1631275357812" duration="5115000" />
+      <workItem from="1631287270853" duration="1077000" />
+      <workItem from="1631290590579" duration="949000" />
+      <workItem from="1631333638238" duration="346000" />
+      <workItem from="1631370391929" duration="7826000" />
+      <workItem from="1631378370985" duration="6430000" />
+      <workItem from="1631431455799" duration="1884000" />
+      <workItem from="1631457548242" duration="971000" />
+      <workItem from="1631625990069" duration="47000" />
+      <workItem from="1631689161394" duration="621000" />
+      <workItem from="1631949206537" duration="11000" />
+      <workItem from="1631949672033" duration="29000" />
+      <workItem from="1632306937765" duration="828000" />
+      <workItem from="1632742982933" duration="626000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1033" y="179" key="#Project_Structure" timestamp="1631285071006">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1033" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1631285071006" />
+    <state x="1094" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1631372103829">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1094" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1631372103829" />
+    <state x="1246" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1631381217502">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1246" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1631381217502" />
+    <state x="1229" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1631192062634">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1229" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631192062634" />
+    <state width="275" height="466" key="DebuggerActiveHint" timestamp="1631384013703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="275" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1631384013703" />
+    <state x="1221" y="275" key="FileChooserDialogImpl" timestamp="1631432306192">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1221" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1631432306192" />
+    <state width="992" height="198" key="GridCell.Tab.0.bottom" timestamp="1632307772266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="992" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1632307772266" />
+    <state width="992" height="198" key="GridCell.Tab.0.center" timestamp="1632307772266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="992" height="198" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1632307772266" />
+    <state width="992" height="198" key="GridCell.Tab.0.left" timestamp="1632307772266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="992" height="198" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1632307772266" />
+    <state width="992" height="198" key="GridCell.Tab.0.right" timestamp="1632307772266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="992" height="198" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1632307772266" />
+    <state width="992" height="344" key="GridCell.Tab.1.bottom" timestamp="1631384853732">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="992" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1631384853732" />
+    <state width="992" height="344" key="GridCell.Tab.1.center" timestamp="1631384853732">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="992" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1631384853732" />
+    <state width="992" height="344" key="GridCell.Tab.1.left" timestamp="1631384853732">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="992" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1631384853732" />
+    <state width="992" height="344" key="GridCell.Tab.1.right" timestamp="1631384853732">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="992" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1631384853732" />
+    <state x="958" y="180" key="Maven.ArtifactSearchDialog" timestamp="1631374853178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="958" y="180" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631374853178" />
+    <state x="884" y="165" key="SettingsEditor" timestamp="1631287481010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="884" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1631287481010" />
+    <state x="835" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1631370551472">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="835" y="365" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631370551472" />
+    <state x="669" y="215" key="new project wizard" timestamp="1631284057938">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="215" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1631284057938" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis/src/main/java/cn/itnanls/core/SessionFactory.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis/src/main/java/cn/itnanls/core/SessionFactory.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

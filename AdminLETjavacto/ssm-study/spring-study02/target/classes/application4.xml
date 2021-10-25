@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="address" class="cn.itnanls.Address">
+      <property name="addressInfo" value="北京八大胡同2"/>
+   </bean>
+
+   <bean id="address2" class="cn.itnanls.Address">
+      <property name="addressInfo" value="北京八大胡同"/>
+   </bean>
+  <!--scope="prototype"多例模式  scope="singleton"单例模式   默认为单例
+    autowire 自动装配byName address   byType cn.itnanls.Address-->
+  <!-- <bean id="user3" class="cn.itnanls.User3" autowire="byName">-->
+   <bean id="user3" class="cn.itnanls.User3" autowire="byName">
+      <!--注入别的类 ref-->
+      <property name="name" value="lucy"/>
+
+      <!--注入数组类型-->
+      <property name="hobbies">
+         <array value-type="java.lang.String">
+            <value>篮球</value>
+            <value>足球</value>
+         </array>
+      </property>
+      <!--集合注入-->
+      <property name="duties">
+         <list value-type="java.lang.String">
+            <value>厂长</value>
+            <value>党委副书记</value>
+         </list>
+      </property>
+       <!--map注入-->
+      <property name="familyTies">
+         <map>
+            <entry key="父亲" value="王健林"/>
+            <entry key="母亲" value="董明珠"/>
+         </map>
+      </property>
+      <!--set注入-->
+      <property name="carts">
+         <set>
+            <value>韭菜</value>
+            <value>鸡蛋</value>
+         </set>
+      </property>
+      <!--Properties注入-->
+      <property name="workExperience">
+         <props>
+            <prop key="杭州阿里巴巴工作过">工作两年</prop>
+            <prop key="百度">工作三年</prop>
+         </props>
+      </property>
+      <!--null注入-->
+      <property name="daughter">
+         <null></null>
+      </property>
+   </bean>
+</beans>

@@ -1,0 +1,11 @@
+POST http://localhost:7777/user7/showUser
+Content-Type: application/json;charset=utf-8
+Accept: application/json
+{
+  "username":"liqdwqdqwqwqd",
+  "password":"123",
+  "age":250,
+  "email":"aa"
+  }
+
+###

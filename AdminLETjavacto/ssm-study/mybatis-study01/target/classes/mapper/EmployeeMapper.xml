@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itnanls.mapper.EmployeeMapper">
+<!--id为主键 ,column是数据库表的列名 , property是对应实体类的属性名-->
+<!--association关联属性 必须指明类型javaType
+ property属性名 javaType属性类型 column在多的一方的表中的列名-->
+    <resultMap id="EmployeeResult" type="Employee">
+        <id property="id" column="eid"/>
+        <result property="name" column="ename"/>
+        <association property="dept" javaType="Dept" >
+            <id property="id" column="did"/>
+            <result property="name" column="dname"/>
+        </association>
+    </resultMap>
+
+    <select id="findEmployeeById" resultMap="EmployeeResult">
+        select e.id eid ,e.name ename, d.id did,d.name dname
+        from employee e
+        left join dept d
+        on e.did = d.id where e.id=#{id}
+    </select>
+
+    <!--按查询嵌套，级联查询处理，就像SQL中的子查询-->
+    <resultMap id="EmployeeDept" type="Employee">
+        <!--association关联属性 property属性名 javaType属性类型 column在多的一方的
+        表中的列名-->
+        <association property="dept" column="did" javaType="Dept" select="getDept" />
+    </resultMap>
+
+    <select id="findAllEmployees" resultMap="EmployeeDept">
+        select * from employee
+    </select>
+    <select id="getDept" resultType="Dept">
+    select * from dept where id = #{id}
+    </select>
+
+   <!-- <resultMap id="EmployeeResult2" type="Employee">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <association property="dept" javaType="Dept"
+                     select="findDeptById" column="did">
+        </association>
+    </resultMap>-->
+
+    <resultMap id="EmployeeResult2" type="Employee">
+        <association property="dept" javaType="Dept"
+                     select="cn.itnanls.mapper.DeptMapper.findDeptById" column="did">
+        </association>
+    </resultMap>
+    <select id="findEmployeeById2" resultMap="EmployeeResult2">
+        select id,name,did from employee where  id=#{id}
+    </select>
+
+
+
+    <select id="getEmpByDid" resultType="Employee">
+        select id,name,did from employee where did=#{id}
+    </select>
+</mapper>

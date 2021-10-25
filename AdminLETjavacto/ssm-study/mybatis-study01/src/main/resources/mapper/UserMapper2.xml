@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itnanls.dao.UserDao2">
+    <!--1. 根据ID查询 parameterType指定参数类型，这里面通过${}或者#{}传入的参数，就不需要对应名字了 -->
+    <select id="selectUserById" parameterType="java.lang.Integer" resultType="cn.itnanls.entity.User">
+        select * from user
+        where id = #{idfdgdg}
+    </select>
+    <!--
+           2. 使用parameterType传入一个对象 对象可以使用全限定名或者别名 必须和此处参数名称对应
+            where id = #{id} and username =#{username}
+            resultType要求数据库列名 必须要和实体类属性名相同 不能够使用别名
+         -->
+    <select id="selectUserById2" parameterType="cn.itnanls.entity.User" resultType="cn.itnanls.entity.User">
+        select * from user
+        where id = #{id} and username =#{username}
+    </select>
+
+    <!--传入多个参数的时候，不需要指定parameterType，
+        这时候可以通过在mapper接口加上注解的方式指定参数名称，必须和此处参数名称对应
+        where id = #{ids} and username =#{username}-->
+    <select id="selectUserById3" resultType="user">
+        select id,username,password from user
+        where id = #{ids} and username =#{username}
+    </select>
+
+<!--column 数据库属性名称 property java表中的字段名称 一样的字段可以不写-->
+    <resultMap id="userResult" type="User">
+        <id property="id"  column="id" />
+        <result property="username" column="a"/>
+        <result  property="password" column="password"/>
+    </resultMap>
+
+    <select id="selectUserById4" resultMap="userResult">
+        select id,username a,password from user
+        where id = #{id} and username =#{username}
+    </select>
+</mapper>
